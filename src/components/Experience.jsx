@@ -19,12 +19,13 @@ export function Experience() {
 
           <ul className="list-disc list-inside mt-3 space-y-1">
             <li>ワークフローの開発・選定</li>
-            <li>システムDBの設計・構築</li>
+            <li>システムDBの改修</li>
+            <li>照会処理のシステム設計、開発、テストまで</li>
           </ul>
 
           <p className="mt-3">
             <span className="font-semibold">使用技術：</span>
-            Java / Oracle / Spring / AWS
+            Java / PostgreSQL / Spring / AWS
           </p>
         </div>
 
@@ -41,6 +42,7 @@ export function Experience() {
           <ul className="list-disc list-inside mt-3 space-y-1">
             <li>単純EOS・多要素認証対応の調査・設計</li>
             <li>リダイレクト処理の対応</li>
+            <li>設計書作成からテスト実施、レビューまで</li>
           </ul>
 
           <p className="mt-3">
@@ -70,6 +72,26 @@ export function Experience() {
           </p>
         </div>
 
+        {/* 2023/06 - 2024/12 */}
+        <div className="border-l-4 pl-4">
+          <p className="text-sm text-gray-500">
+            2023/06 - 2024/12
+          </p>
+
+          <h3 className="text-xl font-bold mt-1">
+            公務員給与システム開発
+          </h3>
+
+          <ul className="list-disc list-inside mt-3 space-y-1">
+            <li>公務員制度による給与システムの開発、運用</li>
+            <li>各種手当に関するシステム整備</li>
+          </ul>
+
+          <p className="mt-3">
+            <span className="font-semibold">使用技術：</span>
+            Java / Oracle / Spring / AWS / Linux
+          </p>
+        </div>
       </div>
     </section>
   );

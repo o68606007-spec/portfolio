@@ -1,9 +1,12 @@
 import { FaGithub } from "react-icons/fa";
 import { SiQiita, SiX } from "react-icons/si";
 import { supabase } from "../utils/supabase";
+import { Router } from "../router/Router";
+import { Link } from 'react-router-dom';
+import { GetProfileImage } from "../lib/GetProfileImage";
 
 export function Profile() {
-  const dataProfileImage = supabase.storage.from('images').getPublicUrl('portfolio/profile.png');
+  const dataProfileImage = GetProfileImage();
 
   return (
     <section className="card">
@@ -28,6 +31,9 @@ export function Profile() {
             <br />
             現在は金融業界のシステム開発に携わっています。
           </p>
+          <Link to="/ProfileDetail" className="text-blue-500 hover:underline">
+            詳細はこちら
+          </Link>
         </div>
 
         {/* 右：画像 + SNS */}

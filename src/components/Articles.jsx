@@ -1,6 +1,6 @@
 import { supabase } from "../utils/supabase";
 
-export function Articles({ articles }: { articles: any[] | null }) {
+export function Articles({ articles }) {
   return (
     <>
       <h2 className="text-3xl font-bold mb-6">

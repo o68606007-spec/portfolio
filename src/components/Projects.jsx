@@ -1,4 +1,5 @@
 import { supabase } from '../utils/supabase';
+import { Link } from 'react-router-dom';
 
 export function Projects({ data }) {
   return (
@@ -37,8 +38,11 @@ export function Projects({ data }) {
                 <p className="text-sm leading-6">
                   {portfolio.describe}
                 </p>
+                <Link to={`/ProjectsDetail/${portfolio.id}`} className="text-blue-500 hover:underline">
+                  詳細はこちら
+                </Link>
 
-                <div className="card-actions justify-end mt-4">
+                {/* <div className="card-actions justify-end mt-4">
                   <a
                     href={portfolio.url}
                     target="_blank"
@@ -61,7 +65,7 @@ export function Projects({ data }) {
                       </a>
                     )}
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
           );

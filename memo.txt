@@ -1,0 +1,46 @@
+Link toの書き方
+
+                <Link to={"/ProjectsDetail/${portfolio.id}"} className="text-blue-500 hover:underline">
+                →to={`/ProjectsDetail/${portfolio.id}`}
+
+useParams() に await は不要
+
+Node.jsではない限り、useStateとかはOK　CSRのみuseState使っても問題なし
+
+map
+{} を使ったアロー関数では、return が必要です。
+
+setの書き方に気を付けよう。これは関数（）
+            setProjectsData[projectsData];
+            setProjectsData(projectsData)
+
+GetProjectsDetailTopImage
+今の data は 配列ではなく1つのオブジェクトです。
+
+コンソールに出ているのが、
+
+{
+  id: 1,
+  title: "Desksetapp",
+  outline: "...",
+  technology: "...",
+  architecture: null,
+  app_top_image: "portfolio/desksetapp.png"
+}
+
+ですよね。
+
+なので、
+
+data.map(...)
+
+は使えません。map() は配列に対して使うものだからです。
+
+map() のコールバックでは、
+
+() → 暗黙的に return
+{} → 自分で return が必要
+
+
+
+

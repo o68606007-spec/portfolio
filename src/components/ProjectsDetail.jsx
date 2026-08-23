@@ -37,7 +37,7 @@ export function ProjectsDetail() {
                             <h2>どんなアプリか</h2>
                             <p>{data.outline}</p>
                             <h2>アプリ制作背景</h2>
-                            <img src={backgroundImage[0].data.publicUrl} ale={data.title} width={200} />
+                            <p>{data.background}</p>
                             <h2>アプリ内容</h2>
                             {contentsData.map((content) => {
                                 const contentImage = GetContentImage(content);
@@ -54,7 +54,7 @@ export function ProjectsDetail() {
                             <h2>技術スタック</h2>
                             <p>{data.technology}</p>
                             <h2>Architecture図</h2>
-                            <img src={backgroundImage[1].data.publicUrl} alt={data.title} width={200}/>
+                            <img src={backgroundImage.data.publicUrl} alt={data.title} width={200}/>
                             <h2>こだわりの部分</h2>
                             <p>{data.stick}</p>
                             <h2>今後の展開</h2>

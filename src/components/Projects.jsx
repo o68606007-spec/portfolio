@@ -41,31 +41,6 @@ export function Projects({ data }) {
                 <Link to={`/ProjectsDetail/${portfolio.id}`} className="text-blue-500 hover:underline">
                   詳細はこちら
                 </Link>
-
-                {/* <div className="card-actions justify-end mt-4">
-                  <a
-                    href={portfolio.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-primary text-blue-500 hover:underline"
-                  >
-                    サイト<br />
-                  </a>
-                </div>
-                <div>
-                  <p className="text-sm text-gray-500 mt-2">
-                    {portfolio.article_url && (
-                      <a
-                        href={portfolio.article_url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-500 hover:underline"
-                      >
-                        プロジェクトの記事
-                      </a>
-                    )}
-                  </p>
-                </div> */}
               </div>
             </div>
           );

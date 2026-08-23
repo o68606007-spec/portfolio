@@ -1,9 +1,9 @@
 import { supabase } from "../utils/supabase";
 
 export const GetProjectsDetailData = async(id: string) => {
-    const { data, error } = await supabase.from('portfolio_details').select('*').eq('id', Number(id));
-    if (error) {
-      throw new Error(error.message);
+    const portfolioDetailsData = await supabase.from('portfolio_details').select('*').eq('id', Number(id));
+    if (portfolioDetailsData.error) {
+      throw new Error(portfolioDetailsData.error.message);
     }
-    return data
+    return portfolioDetailsData.data
 }

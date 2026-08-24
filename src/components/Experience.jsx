@@ -1,15 +1,15 @@
 export function Experience() {
   return (
-    <section className="card">
-      <h2 className="text-3xl font-bold mb-6">
+    <section className="card border-t border-gray-300 mt-12 pt-12">
+      <h2 className="text-3xl font-bold mb-4">
         Experience
       </h2>
 
       <div className="space-y-6">
 
         {/* 2026/07 - 現在 */}
-        <div className="border-l-4 pl-4">
-          <p className="text-sm text-gray-500">
+        <div className="border-l-2 border-gray-300 pl-5">
+          <p className="text-sm text-gray-500 font-medium">
             2026/07 - 現在
           </p>
 
@@ -30,7 +30,7 @@ export function Experience() {
         </div>
 
         {/* 2025/06 - 2026/06 */}
-        <div className="border-l-4 pl-4">
+        <div className="border-l-2 border-gray-300 pl-5">
           <p className="text-sm text-gray-500">
             2025/06 - 2026/06
           </p>
@@ -52,7 +52,7 @@ export function Experience() {
         </div>
 
         {/* 2025/01 - 2025/05 */}
-        <div className="border-l-4 pl-4">
+        <div className="border-l-2 border-gray-300 pl-5">
           <p className="text-sm text-gray-500">
             2025/01 - 2025/05
           </p>
@@ -73,7 +73,7 @@ export function Experience() {
         </div>
 
         {/* 2023/06 - 2024/12 */}
-        <div className="border-l-4 pl-4">
+        <div className="border-l-2 border-gray-300 pl-5">
           <p className="text-sm text-gray-500">
             2023/06 - 2024/12
           </p>

@@ -1,7 +1,5 @@
 import { FaGithub } from "react-icons/fa";
 import { SiQiita, SiX } from "react-icons/si";
-import { supabase } from "../utils/supabase";
-import { Router } from "../router/Router";
 import { Link } from 'react-router-dom';
 import { GetProfileImage } from "../lib/GetProfileImage";
 
@@ -10,11 +8,11 @@ export function Profile() {
 
   return (
     <section className="card">
-      <h2 className="text-3xl font-bold mb-6">
+      <h2 className="text-3xl font-bold mb-8">
         About Me
       </h2>
 
-      <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8">
+      <div className="max-w-3xl mx-auto flex flex-col md:flex-row items-center md:items-start justify-center gap-8">
         {/* 左：文章 */}
         <div className="space-y-4">
           <div>
@@ -25,15 +23,19 @@ export function Profile() {
               大阪出身
             </p>
           </div>
-
-          <p className="leading-7">
+          <div>
+            <p className="text-lg font-semibold">
+              自己紹介
+            </p>
+            <p className="leading-7">
             好奇心が強く、粘り強い性格です。
             <br />
             現在は金融業界のシステム開発に携わっています。
-          </p>
-          <Link to="/ProfileDetail" className="text-blue-500 hover:underline">
-            詳細はこちら
-          </Link>
+            </p>
+            <Link to="/ProfileDetail" className="text-blue-500 hover:underline">
+              More →
+            </Link>
+          </div>
         </div>
 
         {/* 右：画像 + SNS */}

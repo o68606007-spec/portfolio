@@ -32,42 +32,43 @@ export function ProfileDetail() {
           />
           </div>
 
-          <h3 className="text-xl font-semibold">
+          <h3 className="text-xl font-semibold border-t border-gray-300 mt-12 pt-12">
             どんな人？
           </h3>
           <p className="text-gray-500">
             小さなことでも積み重ね、続ける人
           </p>
 
-          <h3 className="text-xl font-semibold">
+          <h3 className="text-xl font-semibold border-t border-gray-300 mt-12 pt-12">
             どんな性格？
           </h3>
-          <div className="leading-7 flex justify-center">
-            <img src={dataPersonalImage.data.publicUrl}
-              alt="Profile"
+          <div className="flex justify-center">
+            <img
+              src={dataPersonalImage.data.publicUrl}
+              alt="性格診断結果"
               width={500}
               height={500}
-              className="w-60 h-60 rounded-full object-cover snap-center"
+              className="w-full max-w-lg h-auto object-contain"
             />
           </div>
             <p className="text-lg mt-4">
               好奇心が高く、読書やスポーツして休日は過ごしています。
             </p>
-          <h3 className="text-xl font-semibold">
+          <h3 className="text-xl font-semibold border-t border-gray-300 mt-12 pt-12">
             組織として目指すこと
           </h3>
           <p>
             利益、成果につながる行動をすることです。<br />
             また、不備やミスで言いづらい雰囲気のチームより、意見が言いやすい環境を大切にしたいです。
           </p>
-          <h3 className="text-xl font-semibold">
+          <h3 className="text-xl font-semibold border-t border-gray-300 mt-12 pt-12">
             個人として目指すこと
           </h3>
           <p>
             技術を目的とせず、課題を解決とする手段として活用することです。<br />
             最小限の説明でも直感的に楽しめるようなサービスやデザインを追求していきたいです。
           </p>
-          <h3 className="text-xl font-semibold">
+          <h3 className="text-xl font-semibold border-t border-gray-300 mt-12 pt-12">
             他人からの自分
           </h3>
           <ul>

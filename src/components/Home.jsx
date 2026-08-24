@@ -1,13 +1,11 @@
-import { memo, useEffect, useState, useCallback } from "react";
-import { supabase } from '../utils/supabase'
-import axios from "axios";
+import { memo, useEffect, useState } from "react";
+
 
 import { Title } from './Title'
 import { Profile } from './Profile'
 import { Projects } from './Projects'
 import { Articles } from './Articles'
 import { Experience } from './Experience'
-import { ProfileDetail } from './ProfileDetail'
 import { GetPortfolioData } from "../lib/GetPortfolioData"
 import { GetPickupArticles } from "../lib/GetPickupArticles"
 

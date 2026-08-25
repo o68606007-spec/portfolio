@@ -2,15 +2,15 @@ import { supabase } from "../utils/supabase";
 
 export const GetBackgroundImage = (data: any) => {
     let Image = []
-    // const background = data.background
-    // const backgroundData = supabase.storage.from('images').getPublicUrl(background);
 
     const architectureImage = data.architecture
     const architectureImageData = supabase.storage.from('images').getPublicUrl(architectureImage);
 
-    return architectureImageData
-    // Image = [backgroundData, architectureImageData]
+    const tblImage = data.tbl_image
+    const tblImageData =tblImage ? supabase.storage.from('images').getPublicUrl(tblImage) : null;
 
-    // return Image
+    Image = [architectureImageData, tblImageData]
+
+    return Image
 
 }

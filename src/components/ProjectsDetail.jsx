@@ -71,14 +71,25 @@ export function ProjectsDetail() {
                             <p>{data.technology}</p>
                             <h2 className="text-2xl font-bold mt-12 mb-4">Architecture図</h2>
                             <img
-                            src={backgroundImage.data.publicUrl}
+                            src={backgroundImage[0].data.publicUrl}
                             alt="Architecture図"
                             className="w-full max-w-3xl mx-auto object-contain"
                             />
+                            {backgroundImage[1] && (
+                                <>
+                                    <h2>TBL設計</h2>
+                                    <img
+                                    src={backgroundImage[1].data.publicUrl}
+                                    alt="Architecture図"
+                                    className="w-full max-w-3xl mx-auto object-contain"
+                                    />
+                                </>
+                            )
+                            }
                             <h2 className="text-2xl font-bold mt-12 mb-4">こだわりの部分</h2>
-                            <p>{data.stick}</p>
+                            <p className="whitespace-pre-line">{data.stick}</p>
                             <h2 className="text-2xl font-bold mt-12 mb-4">今後の展開</h2>
-                            <p>{data.next_step}</p>
+                            <p className="whitespace-pre-line">{data.next_step}</p>
                             <div className="border-t border-gray-300 mt-12 pt-12">
                                 <h2 className="text-2xl font-bold mt-12 mb-4">アプリURL</h2>
                                 <a

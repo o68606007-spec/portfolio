@@ -43,6 +43,7 @@ export function Experience() {
             <li>単純EOS・多要素認証対応の調査・設計</li>
             <li>リダイレクト処理の対応</li>
             <li>設計書作成からテスト実施、レビューまで</li>
+            <li>メンバーのフォロー</li>
           </ul>
 
           <p className="mt-3">
@@ -90,6 +91,27 @@ export function Experience() {
           <p className="mt-3">
             <span className="font-semibold">使用技術：</span>
             Java / Oracle / Spring / AWS / Linux
+          </p>
+        </div>
+
+        {/* 2021/04 - 2023/03 */}
+        <div className="border-l-2 border-gray-300 pl-5">
+          <p className="text-sm text-gray-500">
+            2021/04 - 2023/03
+          </p>
+
+          <h3 className="text-xl font-bold mt-1">
+            証券報告書システム保守運用
+          </h3>
+
+          <ul className="list-disc list-inside mt-3 space-y-1">
+            <li>ジョブ分割に伴う設計からリリースまで</li>
+            <li>数人のチームリーダー経験</li>
+          </ul>
+
+          <p className="mt-3">
+            <span className="font-semibold">使用技術：</span>
+            Java / Cobol / Python / Spring / Linux / Oracle
           </p>
         </div>
       </div>

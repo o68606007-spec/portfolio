@@ -59,7 +59,7 @@ export function ProjectsDetail() {
                                                     className="w-full max-w-3xl mx-auto rounded-xl"
                                                 />
 
-                                                <p className="mt-4 leading-7">
+                                                <p className="whitespace-pre-line mt-4 leading-7">
                                                     {content.content}
                                                 </p>
                                             </div>

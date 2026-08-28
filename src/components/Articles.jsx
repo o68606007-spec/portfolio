@@ -48,7 +48,7 @@ export function Articles({ articles }) {
                     </h4>
 
                     <p className="mt-4 text-sm text-gray-500">
-                      Qiitaで読む →
+                      Qiitaで読む
                     </p>
                   </div>
                 </a>

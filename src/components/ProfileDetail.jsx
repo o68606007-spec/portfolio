@@ -24,7 +24,7 @@ export function ProfileDetail() {
           </div>
           <div className="flex flex-col items-center gap-4">
           <img
-            src={dataPrivateImage.data.publicUrl}
+            src={dataPrivateImage[0].data.publicUrl}
             alt="Profile"
             width={200}
             height={200}
@@ -75,6 +75,12 @@ export function ProfileDetail() {
             <li>分析の力が強い</li>
             <li>業務外から学んだことを業務につなげてみようとしている</li>
           </ul>
+          <h3 className="text-xl font-semibold border-t border-gray-300 mt-12 pt-12">
+            自己紹介動画
+          </h3>
+          <p>
+          <video src={dataPrivateImage[1].data.publicUrl} controls width={500} height={500} className="mx-auto"></video>     
+          </p>
         </div>
       </div>
       <Link to="/" className="text-blue-500 hover:underline">

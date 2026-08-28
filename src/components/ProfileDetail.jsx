@@ -79,7 +79,7 @@ export function ProfileDetail() {
             自己紹介動画
           </h3>
           <p>
-          <video src={dataPrivateImage[1].data.publicUrl} controls width={500} height={500} className="mx-auto"></video>     
+          <video src={dataPrivateImage[1].data.publicUrl} controls preload="metadata" width={500} height={500} className="mx-auto"></video>     
           </p>
         </div>
       </div>

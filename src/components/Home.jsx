@@ -20,8 +20,8 @@ export const Home = memo(() => {
             setData(data);
         }
         const getArticles = async () => {
-            const data = await GetPickupArticles();
-            setArticles(data);
+            const article = await GetPickupArticles();
+            setArticles(article);
         };
 
         getData();

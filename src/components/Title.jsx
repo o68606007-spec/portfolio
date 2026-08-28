@@ -1,7 +1,7 @@
 export function Title() {
   return (
     <div>
-        <h1>Otsuki Portfolio</h1>
+        <h1>大槻和輝 | Portfolio</h1>
     </div>
   );
 }

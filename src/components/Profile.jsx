@@ -14,7 +14,7 @@ export function Profile() {
 
       <div className="max-w-3xl mx-auto flex flex-col md:flex-row items-center md:items-start justify-center gap-8">
         {/* 左：文章 */}
-        <div className="space-y-4">
+        <div className="w-full md:w-2/3 space-y-4">
           <div>
             <p className="text-xl font-semibold">
               大槻 和輝
@@ -27,10 +27,15 @@ export function Profile() {
             <p className="text-lg font-semibold">
               自己紹介
             </p>
-            <p className="leading-7">
-            好奇心が強く、粘り強い性格です。
-            <br />
-            現在は金融業界のシステム開発に携わっています。
+            <p className="leading-7 max-w-xl">
+              現在はJavaを中心とした金融業界のシステム開発を経験する中で、<br />
+              バックエンドだけでなくフロントエンドに領域を広げています。
+              <br />
+              React・TypeScript・Next.js・Supabaseなどを用いて、<br />
+              企画から設計、開発、テスト、デプロイまで経験しています。
+              <br />
+              今後はこれまでのJava開発経験を活かしながら技術領域をさらに広げ、<br />
+              お客様の課題を理解し、実際の価値につなげられるエンジニアを目指します。
             </p>
             <Link to="/ProfileDetail" className="text-blue-500 hover:underline">
               More →
@@ -39,7 +44,7 @@ export function Profile() {
         </div>
 
         {/* 右：画像 + SNS */}
-        <div className="flex flex-col items-center gap-4">
+        <div className="w-full md:w-1/3 flex flex-col items-center gap-4">
           <img
             src={dataProfileImage.data.publicUrl}
             alt="Profile"

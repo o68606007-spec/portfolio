@@ -38,6 +38,8 @@ export function ProjectsDetail() {
                             <p>{data.title}</p>
                             <h2 className="text-2xl font-bold mt-12 mb-4">どんなアプリか</h2>
                             <p>{data.outline}</p>
+                            <h2 className="text-2xl font-bold mt-12 mb-4">なぜ作ったか</h2>
+                            <p>{data.why}</p>
                             <h2 className="text-2xl font-bold mt-12 mb-4">アプリ制作背景</h2>
                             <p className="whitespace-pre-line leading-7">
                                 {data.background}

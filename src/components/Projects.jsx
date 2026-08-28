@@ -41,6 +41,9 @@ export function Projects({ data }) {
                 <p className="text-sm leading-6">
                   {portfolio.describe}
                 </p>
+                <p className="text-sm leading-6">
+                  {portfolio.portfolio_details.technology}
+                </p>
               </div>
             </Link>
           );

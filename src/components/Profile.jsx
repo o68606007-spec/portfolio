@@ -33,7 +33,7 @@ export function Profile() {
               営業経験や業務、個人開発を通じ、<br />
               課題を解決することが大切だと考えているからです。<br />
               現在はバックエンドだけでなくフロントエンドなどを使って<br />
-              企画からリリースまでを開発しています。
+              企画からリリースまでを経験しています。
             </p>
             <Link to="/ProfileDetail" className="text-blue-500 hover:underline">
               More →

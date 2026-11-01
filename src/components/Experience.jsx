@@ -52,6 +52,27 @@ export function Experience() {
           </p>
         </div>
 
+        {/* 2025/01 - 2025/09 */}
+        <div className="border-l-2 border-gray-300 pl-5">
+          <p className="text-sm text-gray-500">
+            2025/01 - 2025/09
+          </p>
+
+          <h3 className="text-xl font-bold mt-1">
+            教育会社のWebアプリ開発
+          </h3>
+
+          <ul className="list-disc list-inside mt-3 space-y-1">
+            <li>新規画面追加開発、一部画面改修</li>
+            <li>既存アプリの仕様書作成</li>
+          </ul>
+
+          <p className="mt-3">
+            <span className="font-semibold">使用技術：</span>
+            PHP / MySQL / Apache / Laravel / Vue.js / GitHub Actions
+          </p>
+        </div>
+
         {/* 2025/01 - 2025/05 */}
         <div className="border-l-2 border-gray-300 pl-5">
           <p className="text-sm text-gray-500">
